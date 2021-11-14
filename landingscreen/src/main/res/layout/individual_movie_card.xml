@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="holder"
+            type="com.movie.app.landingscreen.adapter.MovieAppRecyclerViewAdapterImpl.MovieViewHolder" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/grid_0_5"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/grid_2">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/movie_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/movie_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/grid_2"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textColor="#FF0B2127"
+                android:textSize="@dimen/text_size_14sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/movie_poster"
+                tools:text="@tools:sample/lorem" />
+
+            <TextView
+                android:id="@+id/movie_director_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/grid_0_5"
+                android:ellipsize="end"
+                android:text="@string/director_text_label"
+                android:textColor="#FF0B2127"
+                android:textSize="@dimen/text_size_10sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/movie_title" />
+
+            <TextView
+                android:id="@+id/movie_director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/grid_0_5"
+                android:layout_marginTop="@dimen/grid_0_5"
+                android:ellipsize="end"
+                android:textColor="#FF0B2127"
+                android:textSize="@dimen/text_size_10sp"
+                app:layout_constraintStart_toEndOf="@id/movie_director_label"
+                app:layout_constraintTop_toBottomOf="@+id/movie_title"
+                tools:text="@tools:sample/lorem" />
+
+            <TextView
+                android:id="@+id/movie_year_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/grid_0_5"
+                android:ellipsize="end"
+                android:text="@string/year_text_label"
+                android:textColor="#FF0B2127"
+                android:textSize="@dimen/text_size_10sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/movie_director_label" />
+
+            <TextView
+                android:id="@+id/movie_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/grid_0_5"
+                android:layout_marginTop="@dimen/grid_0_5"
+                android:ellipsize="end"
+                android:textColor="#FF0B2127"
+                android:textSize="@dimen/text_size_10sp"
+                app:layout_constraintStart_toEndOf="@id/movie_year_label"
+                app:layout_constraintTop_toBottomOf="@+id/movie_director"
+                tools:text="@tools:sample/lorem" />
+
+            <TextView
+                android:id="@+id/movie_plot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/grid_2"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#FF0B2127"
+                android:textSize="@dimen/text_size_10sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/movie_year"
+                tools:text="@tools:sample/lorem" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

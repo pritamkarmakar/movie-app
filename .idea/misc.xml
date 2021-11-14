@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/_6_10.xml" value="0.43385416666666665" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.43385416666666665" />
+        <entry key="app/src/main/res/drawable/ic_plate.xml" value="0.46458333333333335" />
+        <entry key="app/src/main/res/drawable/movie_splash.xml" value="0.39166666666666666" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.41770833333333335" />
+        <entry key="basekit/src/main/res/drawable/ic_load.xml" value="0.46458333333333335" />
+        <entry key="basekit/src/main/res/drawable/movie_splash.xml" value="0.39166666666666666" />
+        <entry key="basekitimpl/src/main/res/drawable/ic_load.xml" value="0.37222222222222223" />
+        <entry key="basekitimpl/src/main/res/drawable/user_placeholder.xml" value="0.46458333333333335" />
+        <entry key="landingscreen/src/main/res/drawable/circle.xml" value="0.43385416666666665" />
+        <entry key="landingscreen/src/main/res/drawable/ic_checkmark.xml" value="0.43385416666666665" />
+        <entry key="landingscreen/src/main/res/drawable/ic_close_24px.xml" value="0.43385416666666665" />
+        <entry key="landingscreen/src/main/res/drawable/spinner_background.xml" value="0.43385416666666665" />
+        <entry key="landingscreen/src/main/res/layout/activity_article_details.xml" value="0.5677083333333334" />
+        <entry key="landingscreen/src/main/res/layout/activity_article_list.xml" value="0.5677083333333334" />
+        <entry key="landingscreen/src/main/res/layout/activity_movie_details.xml" value="0.2875" />
+        <entry key="landingscreen/src/main/res/layout/activity_movie_list.xml" value="0.27608915906788245" />
+        <entry key="landingscreen/src/main/res/layout/individual_article_details.xml" value="0.3342391304347826" />
+        <entry key="landingscreen/src/main/res/layout/individual_movie_card.xml" value="0.46197916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

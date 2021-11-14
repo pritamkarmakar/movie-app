@@ -1,0 +1,70 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply from: '../dependencies.gradle'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+}
+
+dependencies {
+    implementation kotlin
+    implementation rxkotlin
+    implementation rxandroid
+    implementation lifecycleextensions
+
+    // unit test
+    testImplementation junit
+    testImplementation mockitokotlin
+    testImplementation mockitoinline
+
+    implementation gson
+    implementation room
+    kapt roomcompiler
+
+    // dagger 2
+    implementation dagger
+    implementation daggerandroid
+    implementation daggerandroidsupport
+    kapt daggercompiler
+    kapt daggerandroidprocessor
+
+    // retrofit
+    api retrofit
+    api convertergson
+    implementation retrofitrx
+    implementation gson
+    compile okhttplogging
+    // paging
+    implementation paging
+
+    implementation project(path: ':models')
+}
