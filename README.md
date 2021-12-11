@@ -34,10 +34,3 @@ The architecture of the project follows the principles of Clean Architecture. He
 <br/>
 <br/>
 ![architecture](images/App_Architecture.png)
-
-## Improvements:
-* More Unit tests.
-* UI tests.
-* Improve MovieDetailsActivity screen
-* Due to time constraints not able to do the add movies as favorite feature.
-* Offline capabilities using Room database.
