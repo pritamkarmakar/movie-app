@@ -37,4 +37,5 @@ The architecture of the project follows the principles of Clean Architecture. He
 
 ## App Demo
 <br/>
+
 ![app demp](images/movie_app_demo_2.gif)
